@@ -1,0 +1,8 @@
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\bin\Debug\PORT_Score.exe
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\bin\Debug\PORT_Score.pdb
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csprojAssemblyReference.cache
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.Form1.resources
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.Properties.Resources.resources
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csproj.GenerateResource.cache
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.exe
+C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.pdb
