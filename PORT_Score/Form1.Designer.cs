@@ -40,7 +40,6 @@
             this.rr_label = new System.Windows.Forms.Label();
             this.sbp_label = new System.Windows.Forms.Label();
             this.t_label = new System.Windows.Forms.Label();
-            this.hr_label = new System.Windows.Forms.Label();
             this.ph_label = new System.Windows.Forms.Label();
             this.bun_label = new System.Windows.Forms.Label();
             this.sl_label = new System.Windows.Forms.Label();
@@ -89,6 +88,7 @@
             this.rb_t_mid = new System.Windows.Forms.RadioButton();
             this.rb_t_small35 = new System.Windows.Forms.RadioButton();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.hr_label = new System.Windows.Forms.Label();
             this.rb_hr_big125 = new System.Windows.Forms.RadioButton();
             this.rb_hr_small125 = new System.Windows.Forms.RadioButton();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -112,6 +112,10 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.rb_pe_no = new System.Windows.Forms.RadioButton();
             this.rb_pe_yes = new System.Windows.Forms.RadioButton();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.ToggleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -132,13 +136,14 @@
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // age_label
             // 
             this.age_label.AutoSize = true;
             this.age_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.age_label.Location = new System.Drawing.Point(287, 47);
+            this.age_label.Location = new System.Drawing.Point(274, 39);
             this.age_label.Name = "age_label";
             this.age_label.Size = new System.Drawing.Size(39, 15);
             this.age_label.TabIndex = 0;
@@ -146,19 +151,22 @@
             // 
             // gender_label
             // 
-            this.gender_label.AutoSize = true;
             this.gender_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.gender_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.gender_label.Location = new System.Drawing.Point(177, 20);
             this.gender_label.Name = "gender_label";
+            this.gender_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gender_label.Size = new System.Drawing.Size(55, 15);
             this.gender_label.TabIndex = 1;
             this.gender_label.Text = "Gender";
+            this.gender_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // nhr_label
             // 
-            this.nhr_label.AutoSize = true;
+            this.nhr_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nhr_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.nhr_label.Location = new System.Drawing.Point(57, 17);
+            this.nhr_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nhr_label.Location = new System.Drawing.Point(57, 15);
             this.nhr_label.Name = "nhr_label";
             this.nhr_label.Size = new System.Drawing.Size(175, 15);
             this.nhr_label.TabIndex = 2;
@@ -166,9 +174,9 @@
             // 
             // nd_label
             // 
-            this.nd_label.AutoSize = true;
             this.nd_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.nd_label.Location = new System.Drawing.Point(81, 18);
+            this.nd_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nd_label.Location = new System.Drawing.Point(81, 16);
             this.nd_label.Name = "nd_label";
             this.nd_label.Size = new System.Drawing.Size(151, 15);
             this.nd_label.TabIndex = 3;
@@ -176,8 +184,8 @@
             // 
             // cld_label
             // 
-            this.cld_label.AutoSize = true;
             this.cld_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.cld_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cld_label.Location = new System.Drawing.Point(57, 17);
             this.cld_label.Name = "cld_label";
             this.cld_label.Size = new System.Drawing.Size(175, 15);
@@ -186,8 +194,8 @@
             // 
             // chf_label
             // 
-            this.chf_label.AutoSize = true;
             this.chf_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.chf_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chf_label.Location = new System.Drawing.Point(33, 18);
             this.chf_label.Name = "chf_label";
             this.chf_label.Size = new System.Drawing.Size(199, 15);
@@ -196,8 +204,8 @@
             // 
             // cd_label
             // 
-            this.cd_label.AutoSize = true;
             this.cd_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.cd_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cd_label.Location = new System.Drawing.Point(41, 17);
             this.cd_label.Name = "cd_label";
             this.cd_label.Size = new System.Drawing.Size(191, 15);
@@ -206,8 +214,8 @@
             // 
             // crd_label
             // 
-            this.crd_label.AutoSize = true;
             this.crd_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.crd_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.crd_label.Location = new System.Drawing.Point(57, 17);
             this.crd_label.Name = "crd_label";
             this.crd_label.Size = new System.Drawing.Size(175, 15);
@@ -216,8 +224,8 @@
             // 
             // ams_label
             // 
-            this.ams_label.AutoSize = true;
             this.ams_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.ams_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ams_label.Location = new System.Drawing.Point(57, 18);
             this.ams_label.Name = "ams_label";
             this.ams_label.Size = new System.Drawing.Size(175, 15);
@@ -226,8 +234,8 @@
             // 
             // rr_label
             // 
-            this.rr_label.AutoSize = true;
             this.rr_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.rr_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rr_label.Location = new System.Drawing.Point(97, 18);
             this.rr_label.Name = "rr_label";
             this.rr_label.Size = new System.Drawing.Size(135, 15);
@@ -236,9 +244,9 @@
             // 
             // sbp_label
             // 
-            this.sbp_label.AutoSize = true;
             this.sbp_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.sbp_label.Location = new System.Drawing.Point(33, 21);
+            this.sbp_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.sbp_label.Location = new System.Drawing.Point(33, 16);
             this.sbp_label.Name = "sbp_label";
             this.sbp_label.Size = new System.Drawing.Size(199, 15);
             this.sbp_label.TabIndex = 10;
@@ -246,38 +254,31 @@
             // 
             // t_label
             // 
-            this.t_label.AutoSize = true;
             this.t_label.Font = new System.Drawing.Font("宋体", 9F);
             this.t_label.Location = new System.Drawing.Point(137, 16);
             this.t_label.Name = "t_label";
             this.t_label.Size = new System.Drawing.Size(95, 15);
             this.t_label.TabIndex = 11;
             this.t_label.Text = "Temperature";
-            // 
-            // hr_label
-            // 
-            this.hr_label.AutoSize = true;
-            this.hr_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.hr_label.Location = new System.Drawing.Point(145, 16);
-            this.hr_label.Name = "hr_label";
-            this.hr_label.Size = new System.Drawing.Size(87, 15);
-            this.hr_label.TabIndex = 12;
-            this.hr_label.Text = "Heart Rate";
+            this.t_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ph_label
             // 
+            this.ph_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ph_label.AutoSize = true;
             this.ph_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.ph_label.Location = new System.Drawing.Point(209, 16);
+            this.ph_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ph_label.Location = new System.Drawing.Point(153, 21);
             this.ph_label.Name = "ph_label";
-            this.ph_label.Size = new System.Drawing.Size(23, 15);
+            this.ph_label.Size = new System.Drawing.Size(71, 15);
             this.ph_label.TabIndex = 13;
-            this.ph_label.Text = "pH";
+            this.ph_label.Text = "      pH";
             // 
             // bun_label
             // 
-            this.bun_label.AutoSize = true;
+            this.bun_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bun_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.bun_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bun_label.Location = new System.Drawing.Point(73, 16);
             this.bun_label.Name = "bun_label";
             this.bun_label.Size = new System.Drawing.Size(159, 15);
@@ -286,8 +287,8 @@
             // 
             // sl_label
             // 
-            this.sl_label.AutoSize = true;
             this.sl_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.sl_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.sl_label.Location = new System.Drawing.Point(129, 16);
             this.sl_label.Name = "sl_label";
             this.sl_label.Size = new System.Drawing.Size(103, 15);
@@ -296,8 +297,8 @@
             // 
             // gl_label
             // 
-            this.gl_label.AutoSize = true;
             this.gl_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.gl_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.gl_label.Location = new System.Drawing.Point(121, 16);
             this.gl_label.Name = "gl_label";
             this.gl_label.Size = new System.Drawing.Size(111, 15);
@@ -308,6 +309,7 @@
             // 
             this.h_label.AutoSize = true;
             this.h_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.h_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.h_label.Location = new System.Drawing.Point(137, 16);
             this.h_label.Name = "h_label";
             this.h_label.Size = new System.Drawing.Size(95, 15);
@@ -318,16 +320,17 @@
             // 
             this.p_label.AutoSize = true;
             this.p_label.Font = new System.Drawing.Font("宋体", 9F);
-            this.p_label.Location = new System.Drawing.Point(197, 16);
+            this.p_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.p_label.Location = new System.Drawing.Point(125, 16);
             this.p_label.Name = "p_label";
-            this.p_label.Size = new System.Drawing.Size(35, 15);
+            this.p_label.Size = new System.Drawing.Size(107, 15);
             this.p_label.TabIndex = 18;
-            this.p_label.Text = "PaO₂";
+            this.p_label.Text = "         PaO₂";
             // 
             // pe_label
             // 
-            this.pe_label.AutoSize = true;
             this.pe_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.pe_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.pe_label.Location = new System.Drawing.Point(89, 18);
             this.pe_label.Name = "pe_label";
             this.pe_label.Size = new System.Drawing.Size(143, 15);
@@ -336,18 +339,18 @@
             // 
             // tb_age
             // 
-            this.tb_age.Location = new System.Drawing.Point(340, 44);
+            this.tb_age.Location = new System.Drawing.Point(327, 36);
             this.tb_age.Name = "tb_age";
             this.tb_age.Size = new System.Drawing.Size(100, 25);
             this.tb_age.TabIndex = 20;
             // 
             // btn_submit
             // 
-            this.btn_submit.Location = new System.Drawing.Point(395, 659);
+            this.btn_submit.Location = new System.Drawing.Point(375, 650);
             this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(131, 41);
+            this.btn_submit.Size = new System.Drawing.Size(121, 41);
             this.btn_submit.TabIndex = 66;
-            this.btn_submit.Text = "确认";
+            this.btn_submit.Text = "Calculate";
             this.btn_submit.UseVisualStyleBackColor = true;
             this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
@@ -376,7 +379,7 @@
             // rb_nhr_no
             // 
             this.rb_nhr_no.AutoSize = true;
-            this.rb_nhr_no.Location = new System.Drawing.Point(343, 15);
+            this.rb_nhr_no.Location = new System.Drawing.Point(343, 13);
             this.rb_nhr_no.Name = "rb_nhr_no";
             this.rb_nhr_no.Size = new System.Drawing.Size(44, 19);
             this.rb_nhr_no.TabIndex = 72;
@@ -532,9 +535,9 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.rb_male);
-            this.panel1.Controls.Add(this.gender_label);
             this.panel1.Controls.Add(this.rb_female);
-            this.panel1.Location = new System.Drawing.Point(22, 94);
+            this.panel1.Controls.Add(this.gender_label);
+            this.panel1.Location = new System.Drawing.Point(9, 86);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 43);
@@ -544,10 +547,10 @@
             // 
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.nhr_label);
             this.panel2.Controls.Add(this.rb_nhr_yes);
+            this.panel2.Controls.Add(this.nhr_label);
             this.panel2.Controls.Add(this.rb_nhr_no);
-            this.panel2.Location = new System.Drawing.Point(22, 136);
+            this.panel2.Location = new System.Drawing.Point(9, 128);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(421, 43);
@@ -560,7 +563,7 @@
             this.panel3.Controls.Add(this.nd_label);
             this.panel3.Controls.Add(this.rb_nd_yes);
             this.panel3.Controls.Add(this.rb_nd_no);
-            this.panel3.Location = new System.Drawing.Point(22, 178);
+            this.panel3.Location = new System.Drawing.Point(9, 170);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(421, 43);
@@ -573,7 +576,7 @@
             this.panel4.Controls.Add(this.crd_label);
             this.panel4.Controls.Add(this.rb_crd_no);
             this.panel4.Controls.Add(this.rb_crd_yes);
-            this.panel4.Location = new System.Drawing.Point(22, 346);
+            this.panel4.Location = new System.Drawing.Point(9, 338);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(421, 43);
@@ -586,7 +589,7 @@
             this.panel5.Controls.Add(this.cd_label);
             this.panel5.Controls.Add(this.rb_cd_no);
             this.panel5.Controls.Add(this.rb_cd_yes);
-            this.panel5.Location = new System.Drawing.Point(22, 304);
+            this.panel5.Location = new System.Drawing.Point(9, 296);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(421, 43);
@@ -599,7 +602,7 @@
             this.panel6.Controls.Add(this.chf_label);
             this.panel6.Controls.Add(this.rb_chf_no);
             this.panel6.Controls.Add(this.rb_chf_yes);
-            this.panel6.Location = new System.Drawing.Point(22, 262);
+            this.panel6.Location = new System.Drawing.Point(9, 254);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(421, 43);
@@ -612,7 +615,7 @@
             this.panel7.Controls.Add(this.cld_label);
             this.panel7.Controls.Add(this.rb_cld_no);
             this.panel7.Controls.Add(this.rb_cld_yes);
-            this.panel7.Location = new System.Drawing.Point(22, 220);
+            this.panel7.Location = new System.Drawing.Point(9, 212);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(421, 43);
@@ -626,7 +629,7 @@
             this.panel8.Controls.Add(this.rb_rr_big30);
             this.panel8.Controls.Add(this.rb_rr_small30);
             this.panel8.Controls.Add(this.rr_label);
-            this.panel8.Location = new System.Drawing.Point(22, 430);
+            this.panel8.Location = new System.Drawing.Point(9, 422);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(421, 71);
@@ -705,7 +708,7 @@
             this.panel9.Controls.Add(this.ams_label);
             this.panel9.Controls.Add(this.rb_ams_no);
             this.panel9.Controls.Add(this.rb_ams_yes);
-            this.panel9.Location = new System.Drawing.Point(22, 388);
+            this.panel9.Location = new System.Drawing.Point(9, 380);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(421, 43);
@@ -718,7 +721,7 @@
             this.panel11.Controls.Add(this.rb_sbp_small90);
             this.panel11.Controls.Add(this.rb_sbp_big90);
             this.panel11.Controls.Add(this.sbp_label);
-            this.panel11.Location = new System.Drawing.Point(22, 500);
+            this.panel11.Location = new System.Drawing.Point(9, 492);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(421, 74);
@@ -750,11 +753,11 @@
             // 
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.rb_t_big40);
             this.panel13.Controls.Add(this.t_label);
+            this.panel13.Controls.Add(this.rb_t_big40);
             this.panel13.Controls.Add(this.rb_t_mid);
             this.panel13.Controls.Add(this.rb_t_small35);
-            this.panel13.Location = new System.Drawing.Point(464, 42);
+            this.panel13.Location = new System.Drawing.Point(451, 34);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(421, 95);
@@ -797,14 +800,25 @@
             // 
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.hr_label);
             this.panel12.Controls.Add(this.rb_hr_big125);
             this.panel12.Controls.Add(this.rb_hr_small125);
-            this.panel12.Controls.Add(this.hr_label);
-            this.panel12.Location = new System.Drawing.Point(464, 133);
+            this.panel12.Location = new System.Drawing.Point(451, 125);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(421, 66);
             this.panel12.TabIndex = 94;
+            // 
+            // hr_label
+            // 
+            this.hr_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.hr_label.Font = new System.Drawing.Font("宋体", 9F);
+            this.hr_label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.hr_label.Location = new System.Drawing.Point(145, 14);
+            this.hr_label.Name = "hr_label";
+            this.hr_label.Size = new System.Drawing.Size(87, 15);
+            this.hr_label.TabIndex = 12;
+            this.hr_label.Text = "Heart Rate";
             // 
             // rb_hr_big125
             // 
@@ -835,7 +849,7 @@
             this.panel14.Controls.Add(this.rb_ph_small735);
             this.panel14.Controls.Add(this.rb_ph_big735);
             this.panel14.Controls.Add(this.ph_label);
-            this.panel14.Location = new System.Drawing.Point(464, 198);
+            this.panel14.Location = new System.Drawing.Point(451, 190);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(421, 66);
@@ -870,7 +884,7 @@
             this.panel15.Controls.Add(this.rb_bun_big11);
             this.panel15.Controls.Add(this.rb_bun_small11);
             this.panel15.Controls.Add(this.bun_label);
-            this.panel15.Location = new System.Drawing.Point(464, 263);
+            this.panel15.Location = new System.Drawing.Point(451, 255);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(421, 66);
@@ -905,7 +919,7 @@
             this.panel16.Controls.Add(this.rb_h_big30);
             this.panel16.Controls.Add(this.rb_h_small30);
             this.panel16.Controls.Add(this.h_label);
-            this.panel16.Location = new System.Drawing.Point(464, 458);
+            this.panel16.Location = new System.Drawing.Point(451, 450);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(421, 66);
@@ -940,7 +954,7 @@
             this.panel17.Controls.Add(this.rb_gl_big14);
             this.panel17.Controls.Add(this.rb_gl_small14);
             this.panel17.Controls.Add(this.gl_label);
-            this.panel17.Location = new System.Drawing.Point(464, 393);
+            this.panel17.Location = new System.Drawing.Point(451, 385);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(421, 66);
@@ -975,7 +989,7 @@
             this.panel18.Controls.Add(this.rb_sl_big130);
             this.panel18.Controls.Add(this.rb_sl_small130);
             this.panel18.Controls.Add(this.sl_label);
-            this.panel18.Location = new System.Drawing.Point(464, 328);
+            this.panel18.Location = new System.Drawing.Point(451, 320);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(421, 66);
@@ -1010,7 +1024,7 @@
             this.panel19.Controls.Add(this.rb_p_big8);
             this.panel19.Controls.Add(this.rb_p_small8);
             this.panel19.Controls.Add(this.p_label);
-            this.panel19.Location = new System.Drawing.Point(464, 523);
+            this.panel19.Location = new System.Drawing.Point(451, 515);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(421, 66);
@@ -1045,7 +1059,7 @@
             this.panel20.Controls.Add(this.rb_pe_no);
             this.panel20.Controls.Add(this.rb_pe_yes);
             this.panel20.Controls.Add(this.pe_label);
-            this.panel20.Location = new System.Drawing.Point(464, 588);
+            this.panel20.Location = new System.Drawing.Point(451, 580);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(421, 43);
@@ -1073,11 +1087,49 @@
             this.rb_pe_yes.Text = "Yes";
             this.rb_pe_yes.UseVisualStyleBackColor = true;
             // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToggleToolStripMenuItem,
+            this.HelpToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(884, 28);
+            this.menuStrip.TabIndex = 102;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // ToggleToolStripMenuItem
+            // 
+            this.ToggleToolStripMenuItem.Name = "ToggleToolStripMenuItem";
+            this.ToggleToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.ToggleToolStripMenuItem.Text = "中/EN";
+            this.ToggleToolStripMenuItem.Click += new System.EventHandler(this.ToggleToolStripMenuItem_Click);
+            // 
+            // HelpToolStripMenuItem
+            // 
+            this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.HelpToolStripMenuItem.Text = "Help";
+            this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Location = new System.Drawing.Point(235, 650);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(78, 41);
+            this.btn_clear.TabIndex = 103;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 723);
+            this.ClientSize = new System.Drawing.Size(884, 703);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel17);
@@ -1100,7 +1152,9 @@
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.tb_age);
             this.Controls.Add(this.age_label);
+            this.Controls.Add(this.menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "PORT Score";
@@ -1144,6 +1198,8 @@
             this.panel19.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1163,7 +1219,6 @@
         private System.Windows.Forms.Label rr_label;
         private System.Windows.Forms.Label sbp_label;
         private System.Windows.Forms.Label t_label;
-        private System.Windows.Forms.Label hr_label;
         private System.Windows.Forms.Label ph_label;
         private System.Windows.Forms.Label bun_label;
         private System.Windows.Forms.Label sl_label;
@@ -1235,6 +1290,11 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.RadioButton rb_pe_no;
         private System.Windows.Forms.RadioButton rb_pe_yes;
+        private System.Windows.Forms.Label hr_label;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem ToggleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.Button btn_clear;
     }
 }
 

@@ -6,3 +6,12 @@ C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.Pro
 C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csproj.GenerateResource.cache
 C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.exe
 C:\Users\Xing Jiawei\source\repos\PORT_Score\PORT_Score\obj\Debug\PORT_Score.pdb
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\bin\Debug\PORT_Score.exe
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\bin\Debug\PORT_Score.pdb
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csproj.AssemblyReference.cache
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.Form1.resources
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.Properties.Resources.resources
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csproj.GenerateResource.cache
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.csproj.CoreCompileInputs.cache
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.exe
+D:\WorkSpace\CodeSpace\PORT_Score\PORT_Score\obj\Debug\PORT_Score.pdb
